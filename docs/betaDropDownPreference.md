@@ -39,7 +39,7 @@
     android:title="Название настройки"
     android:summary="Описание настройки"
     android:key="your_key"
-    android:defaultValue="2"
+    android:defaultValue="1"
     app:entries="@array/your_entries_array"
     app:entryValues="@array/your_values_array" />
 ```
