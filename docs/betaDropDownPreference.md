@@ -25,14 +25,13 @@
     <item>Второй пункт</item>
     <item>Третий пункт</item>
 </string-array>
+
 <string-array name="your_values_array">
     <item>0</item>
     <item>1</item>
     <item>2</item>
 </string-array>
-
 ```
-
 
 ## Использование в XML
 ```xml
