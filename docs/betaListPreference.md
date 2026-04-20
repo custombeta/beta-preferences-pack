@@ -46,7 +46,7 @@
     android:title="Название настройки"
     android:summary="Выбрано: %s"
     android:key="your_key"
-    android:defaultValue="0"
+    android:defaultValue="1"
     app:entries="@array/your_entries_array"
     app:entryValues="@array/your_values_array"
     android:dialogTitle="Заголовок диалога"
