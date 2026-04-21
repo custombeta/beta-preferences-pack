@@ -16,9 +16,6 @@
 | `android:key`              | Да           | `String`   | Ключ системной настройки. По этому ключу в `System table` будет сохраняться строковое значение. |
 | `android:defaultValue`     | Нет          | `String`   | Значение по умолчанию. Используется при первом запуске и восстанавливается при сбросе.          |
 | `android:inputType`        | Нет          | `Flag`     | Тип вводимых данных (`text`, `number`, `textPassword` и др.).                                   |
-| `android:hint`             | Нет          | `String`   | Подсказка внутри поля ввода, отображается когда поле пустое.                                    |
-| `android:maxLength`        | Нет          | `Integer`  | Максимальное количество символов, доступных для ввода.                                          |
-| `android:selectAllOnFocus` | Нет          | `Boolean`  | Если `true` — весь текст выделяется автоматически при фокусировке на поле.                      |
 
 ## Атрибуты для настройки диалога
 | Атрибут                      | Обязательный | Тип данных | Описание                                                                   |
@@ -37,9 +34,6 @@
     android:key="your_key"
     android:defaultValue="Ваш текст по умолчанию"
     android:inputType="text"
-    android:hint="Введите значение"
-    android:maxLength="20"
-    android:selectAllOnFocus="true"
     android:dialogTitle="Заголовок диалога"
     android:dialogMessage="Описание внутри диалога"
     android:dialogIcon="@drawable/you_dialog_icon"
