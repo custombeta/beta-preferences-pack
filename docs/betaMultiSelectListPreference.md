@@ -1,5 +1,5 @@
 # betaMultiSelectListPreference
-Компонент списка с выделением выбранных пунктов с помощью Checkbox в диалоге, сохраняющий выбранные значения напрямую в `System table`. Поддерживает сброс до значения по умолчанию долгим нажатием.
+Компонент списка с выделением выбранных пунктов с помощью `Checkbox` в диалоге, сохраняющий выбранные значения напрямую в `System table`. Поддерживает сброс до значения по умолчанию долгим нажатием.
 
 ## Установка
  1. Импортируйте архив в любой `.dex`
@@ -13,6 +13,7 @@
 |------------------------|--------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `android:title`        | Нет          | `String`       | Название настройки в интерфейсе.                                                                                                                                   |
 | `android:summary`      | Нет          | `String`       | Описание настройки под названием. Поддерживает форматирование текущих значений через `%s` — подставляются названия всех выбранных пунктов через `,`.               |
+| `android:icon`         | Нет          | `Drawable`     | Иконка в блоке `Preference`.                                                                                                                                                |
 | `android:key`          | Да           | `String`       | Ключ системной настройки. По этому ключу в `System table` будет сохраняться строка из выбранных значений `entryValues`, разделённых запятой (например `0,2`).      |
 | `android:defaultValue` | Нет          | `String`       | Значения по умолчанию через запятую. Должны совпадать с элементами `entryValues` (например `0,2`). Используются при первом запуске и восстанавливаются при сбросе. |
 | `app:entries`          | Да           | `String array` | Массив строк для отображения пользователю (названия пунктов в списке).                                                                                             |
@@ -46,12 +47,13 @@
 <betaMultiSelectListPreference
     android:title="Название настройки"
     android:summary="Выбрано: %s"
+    android:icon="@drawable/your_icon"
     android:key="your_key"
     android:defaultValue="0,2"
     app:entries="@array/your_entries_array"
     app:entryValues="@array/your_values_array"
     android:dialogTitle="Заголовок диалога"
-    android:dialogIcon="@drawable/you_dialog_icon"
+    android:dialogIcon="@drawable/your_dialog_icon"
     android:positiveButtonText="OK"
     android:negativeButtonText="Отмена" />
 ```
