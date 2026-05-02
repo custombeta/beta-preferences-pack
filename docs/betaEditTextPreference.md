@@ -13,6 +13,7 @@
 |----------------------------|--------------|------------|-------------------------------------------------------------------------------------------------|
 | `android:title`            | Нет          | `String`   | Название настройки в интерфейсе.                                                                |
 | `android:summary`          | Нет          | `String`   | Описание настройки под названием. Поддерживает форматирование текущего значение через `%s`.     |
+| `android:icon`             | Нет          | `Drawable` | Иконка в блоке `Preference`.                                                                    |
 | `android:key`              | Да           | `String`   | Ключ системной настройки. По этому ключу в `System table` будет сохраняться строковое значение. |
 | `android:defaultValue`     | Нет          | `String`   | Значение по умолчанию. Используется при первом запуске и восстанавливается при сбросе.          |
 | `android:inputType`        | Нет          | `Flag`     | Тип вводимых данных (`text`, `number`, `textPassword` и др.).                                   |
@@ -31,12 +32,13 @@
 <betaEditTextPreference
     android:title="Название настройки"
     android:summary="Текущее значение: %s"
+    android:icon="@drawable/your_icon"
     android:key="your_key"
     android:defaultValue="Ваш текст по умолчанию"
     android:inputType="text"
     android:dialogTitle="Заголовок диалога"
     android:dialogMessage="Описание внутри диалога"
-    android:dialogIcon="@drawable/you_dialog_icon"
+    android:dialogIcon="@drawable/your_dialog_icon"
     android:positiveButtonText="OK"
     android:negativeButtonText="Отмена" />
 ```
