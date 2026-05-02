@@ -13,6 +13,7 @@
 |------------------------|--------------|----------------|--------------------------------------------------------------------------------------------------------|
 | `android:title`        | Нет          | `String`       | Название настройки в интерфейсе.                                                                       |
 | `android:summary`      | Нет          | `String`       | Описание настройки под названием.                                                                      |
+| `android:icon`         | Нет          | `Drawable`     | Иконка в блоке `Preference`.                                                                           |
 | `android:key`          | Да           | `String`       | Ключ системной настройки. По этому ключу в `System table` будет сохраняться числовое значение массива. |
 | `android:defaultValue` | Да           | `String`       | Значение по умолчанию. Используется при первом запуске и восстанавливается при сбросе.                 |
 | `app:entries`          | Да           | `String array` | Массив строк для отображения пользователю (названия пунктов в списке).                                 |
@@ -38,6 +39,7 @@
 <betaDropDownPreference
     android:title="Название настройки"
     android:summary="Описание настройки"
+    android:icon="@drawable/your_icon"
     android:key="your_key"
     android:defaultValue="1"
     app:entries="@array/your_entries_array"
