@@ -13,6 +13,7 @@
 |------------------------|--------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `android:title`        | Нет          | `String`       | Название настройки в интерфейсе.                                                                                                            |
 | `android:summary`      | Нет          | `String`       | Описание настройки под названием. Поддерживает форматирование текущего значения через `%s`.                                                 |
+| `android:icon`         | Нет          | `Drawable`     | Иконка в блоке `Preference`.                                                                                                                |
 | `android:key`          | Да           | `String`       | Ключ системной настройки. По этому ключу в `System table` будет сохраняться значение из `entryValues`.                                      |
 | `android:defaultValue` | Да           | `String`       | Значение по умолчанию. Должно совпадать с одним из элементов `entryValues`. Используется при первом запуске и восстанавливается при сбросе. |
 | `app:entries`          | Да           | `String array` | Массив строк для отображения пользователю (названия пунктов в списке).                                                                      |
@@ -45,11 +46,12 @@
 <betaListPreference
     android:title="Название настройки"
     android:summary="Выбрано: %s"
+    android:icon="@drawable/your_icon"
     android:key="your_key"
     android:defaultValue="1"
     app:entries="@array/your_entries_array"
     app:entryValues="@array/your_values_array"
     android:dialogTitle="Заголовок диалога"
-    android:dialogIcon="@drawable/you_dialog_icon"
+    android:dialogIcon="@drawable/your_dialog_icon"
     android:negativeButtonText="Отмена" />
 ```
