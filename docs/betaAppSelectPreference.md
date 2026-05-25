@@ -11,6 +11,14 @@
 ```xml
 <path name="beta_app_select_item">res/layout/beta_app_select_item.xml</path>
 ```
+ 4. Опционально: добавьте drawable `beta_app_select_effect_fg.xml` в `res/drawable/` и `res/drawable-night/`, также добавьте в ресурсы `drawable`:
+```xml
+<path name="beta_app_select_effect_fg">res/drawable/beta_app_select_effect_fg.xml</path>
+```
+```xml
+<path name="beta_app_select_effect_fg">res/drawable-night/beta_app_select_effect_fg.xml</path>
+```
+Нужен для эффекта выделения при нажатии на элемент списка. Если не добавляете — удалите строку `android:foreground="@drawable/beta_app_select_effect_fg"` из `beta_app_select_item.xml`.
 
 ## Поддерживаемые атрибуты
 | Атрибут                | Обязательный | Тип данных | Описание и что сохраняет                                                                                                    |
