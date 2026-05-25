@@ -93,7 +93,7 @@
     android:summary="Описание настройки"
     dialogTitle="Заголовок диалога"
     dialogIcon="@drawable/you_dialog_icon"
-    dialogLayout="@layout/your_dialog_layout"
+    dialogLayout="@layout/you_dialog_layout"
     dialogPositiveButton="Сохранить"
     dialogPositiveButtonListener="com.example.MyPositiveListener"
     dialogNegativeButton="Отмена"
