@@ -3,9 +3,11 @@
 
 ## Установка
  1. Импортируйте архив в любой `.dex`
- 2. Добавьте строковый ресурс в `string-ru`, для работы уведомления:
+ 2. Добавьте строковые ресурсы в `string-ru`, для работы уведомления и диалога:
 ```xml
 <string name="beta_default_value_restored">Значение по умолчанию восстановлено</string>
+<string name="dialog_close_button">Закрыть</string>
+<string name="dialog_save_button">Сохранить</string>
 ```
  3. Добавьте кастомный layout `beta_app_select_item.xml` по пути `res/layout/`, также добавьте в ресурсы `layout`:
 ```xml
